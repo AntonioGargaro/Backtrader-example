@@ -7,7 +7,7 @@ How to install and run Backtrader on your local machine.
 
 To begin setting up the environment 'cd' in your terminal to the project directory.
 
-```cmd
+```bash
 cd to/directory/of/project
 ```
 
@@ -15,7 +15,7 @@ cd to/directory/of/project
 
 For Linux install Pip by,
 
-```cmd
+```bash
 python3.4 -m pip install --user --upgrade pip
 ```
 
@@ -27,7 +27,7 @@ virtualenv is used to manage Python packages for different projects. Using virtu
 
 For Linux install virtualenv by,
 
-```cmd
+```bash
 python3.4 -m pip install --user virtualenv
 ```
 
@@ -39,7 +39,7 @@ To create a virtual environment, go to your project’s directory and run virtua
 
 For Linux create virtualenv by,
 
-```cmd
+```bash
 python3.4 -m virtualenv env
 ```
 
@@ -54,19 +54,19 @@ To activate on Linux have a terminal open in the project folder where you create
 
 Then run this command for Linux,
 
-```cmd
+```bash
 source env/bin/activate
 ```
 
-You can tell if it activate successfully if your cmd has prefix '(env)'
+You can tell if it activate successfully if your terminal has prefix '(env)'
 
-```cmd
+```bash
 (env) jove:~/to/directory/of/project$
 ```
 
 You can deactivate from the virtualenv by simply running,
 
-```cmd
+```bash
 deactivate
 ```
 
@@ -74,4 +74,17 @@ deactivate
 
 To install libraries to your local library **MAKE SURE** you have **ACTIVATED** your virtualenv. 
 
+Normally Python virtualenvs come with a 'requirements.txt' file which contains all the dependencies for the source code to work.
+Hence you can install all the libraries using 'requirements.txt' with the following command,
 
+```bash
+pip install -r requirements.txt
+```
+
+If this file doesn't exist then for the purpose of this tutorial you can install the dependency 'backtrader' by,
+
+```bash
+pip install backtrader
+```
+
+Congratulations, your Python virtualenv is setup!
