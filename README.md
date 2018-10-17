@@ -75,16 +75,42 @@ deactivate
 To install libraries to your local library **MAKE SURE** you have **ACTIVATED** your virtualenv. 
 
 Normally Python virtualenvs come with a 'requirements.txt' file which contains all the dependencies for the source code to work.
-Hence you can install all the libraries using 'requirements.txt' with the following command,
+Hence you can install all the libraries in 'requirements.txt' with the following command,
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If this file doesn't exist then for the purpose of this tutorial you can install the dependency 'backtrader' by,
+You should now have the following dependencies installed,
+
+- backtrader==1.9.67.122
+- certifi==2018.10.15
+- chardet==3.0.4
+- cycler==0.10.0
+- idna==2.7
+- kiwisolver==1.0.1
+- matplotlib==2.2.3
+- numpy==1.15.2
+- pyparsing==2.2.2
+- python-dateutil==2.7.3
+- pytz==2018.5
+- requests==2.19.1
+- six==1.11.0
+- urllib3==1.23
+
+You can check the installed dependencies on your **ACTIVATED** virtualenv with the command,
 
 ```bash
-pip install backtrader
+pip freeze
 ```
 
 Congratulations, your Python virtualenv is setup!
+
+# Running the Script
+Now that your Python virtual environment has been setup, make sure you have **ACTIVATED** it. 
+
+Once activated you can simply run the script by using the commannd,
+
+```bash
+python run.py
+```
